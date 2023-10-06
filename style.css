@@ -1,3 +1,8 @@
+:root {
+    --form-bg-color:#EFEFEF;
+    --input-field-bg-color:white;
+}
+
 html,
 body {
     margin: 0px;
@@ -14,6 +19,28 @@ body {
 }
 
 .hero {
+    flex-grow: 1;
+    display: flex;
     height: 100vh;
     width: 40vw;
+}
+
+.form-content {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: var(--form-bg-color);
+}
+
+.form-header,
+.submitBtn,
+.login {
+    padding: 0px 2vw;
+}
+
+.form-control {
+    background-color: var(--input-field-bg-color);
+    padding: 2vw;
 }
