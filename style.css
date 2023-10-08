@@ -1,6 +1,7 @@
 :root {
     --form-bg-color:#EFEFEF;
     --input-field-bg-color:white;
+    --box-shadow-color: rgb(190, 190, 190, 0.80);
 }
 
 html,
@@ -43,4 +44,9 @@ body {
 .form-control {
     background-color: var(--input-field-bg-color);
     padding: 2vw;
+    box-shadow: 5px 5px 5px 0px var(--box-shadow-color);
+}
+
+.submitBtn {
+    padding: 4vh 2vw;
 }
