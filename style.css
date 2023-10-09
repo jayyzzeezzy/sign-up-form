@@ -4,6 +4,8 @@
     --box-shadow-color: rgb(190, 190, 190, 0.80);
     --button-color: rgb(149, 154, 150);
     --button-color-hover: rgb(132, 135, 133);
+    --input-focus: rgb(110, 160, 235);
+    --input-border: lightgray;
 }
 
 html,
@@ -96,6 +98,19 @@ body {
     display: flex;
     flex-direction: column;
     width: 300px;
+}
+
+input {
+    height: 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid var(--input-border);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--input-focus);
+    box-shadow: 3px 3px 5px 1px var(--box-shadow-color);
 }
 
 .submitBtn {
