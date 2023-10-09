@@ -81,6 +81,19 @@ body {
     background-color: var(--input-field-bg-color);
     padding: 0px 2vw 4vh 2vw;
     box-shadow: 5px 5px 5px 0px var(--box-shadow-color);
+    box-sizing: border-box;
+}
+
+#contact-form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
 }
 
 .submitBtn {
