@@ -58,6 +58,10 @@ body {
     color: white;
 }
 
+.form-header {
+    margin-bottom: 2vh;
+}
+
 .form-content {
     flex-grow: 2;
     display: flex;
@@ -75,7 +79,7 @@ body {
 
 .form-control {
     background-color: var(--input-field-bg-color);
-    padding: 2vw;
+    padding: 0px 2vw 4vh 2vw;
     box-shadow: 5px 5px 5px 0px var(--box-shadow-color);
 }
 
