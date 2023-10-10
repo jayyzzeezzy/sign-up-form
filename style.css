@@ -6,6 +6,7 @@
     --button-color-hover: rgb(132, 135, 133);
     --input-focus: rgb(110, 160, 235);
     --input-border: lightgray;
+    --input-invalid: rgb(255, 60, 60);
 }
 
 html,
@@ -111,6 +112,14 @@ input:focus {
     outline: none;
     border: 2px solid var(--input-focus);
     box-shadow: 3px 3px 5px 1px var(--box-shadow-color);
+}
+
+input:invalid:focus {
+    border: 2px solid var(--input-invalid);
+}
+
+input:valid:focus {
+    border: 2px solid var(--input-focus);
 }
 
 .submitBtn {
