@@ -114,8 +114,15 @@ input:focus {
     box-shadow: 3px 3px 5px 1px var(--box-shadow-color);
 }
 
-input:invalid:focus {
+input:invalid:focus,
+.mismatch,
+input:valid:focus.mismatch {
     border: 2px solid var(--input-invalid);
+}
+
+.password-error,
+.confirm-password-error {
+    color: var(--input-invalid);
 }
 
 input:valid:focus {
